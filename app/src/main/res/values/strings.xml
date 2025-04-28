@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Сокращение \nссылок</string>
+    <string name="full_link">Введите полную ссылку</string>
+    <string name="short_link">Введите сокращенную ссылку</string>
+    <string name="label_row">Сокращение:</string>
+    <string name="btn">Готово</string>
+</resources>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="0dp"
+        android:background="@color/secondary"
+        android:fontFamily="@font/montserrat_semibold"
+        android:gravity="center"
+        android:paddingVertical="10dp"
+        android:text="@string/app_name"
+        android:textColor="@color/background"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/full_link"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="10dp"
+        android:enabled="true"
+        android:textColor="@color/colorTextSecond"
+        android:autofillHints="@string/full_link"
+        android:ems="10"
+        android:hint="@string/full_link"
+        android:inputType="text"
+        android:focusable="true"
+        android:padding="20dp" />
+
+    <EditText
+        android:id="@+id/short_link"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:enabled="true"
+        android:layout_below="@+id/full_link"
+        android:layout_alignParentStart="true"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="0dp"
+        android:textColor="@color/colorTextSecond"
+        android:autofillHints="@string/short_link"
+        android:ems="10"
+        android:hint="@string/short_link"
+        android:focusable="true"
+        android:inputType="text"
+        android:padding="20dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/add_button"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/short_link"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/montserrat_semibold"
+        android:gravity="center"
+        android:text="@string/btn"
+        android:textAllCaps="false"
+        android:textColor="@color/colorTextSecond"
+        android:textSize="20sp" />
+
+    <ListView
+        android:id="@+id/task_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/add_button"
+        android:layout_marginHorizontal="30dp"
+        android:dividerHeight="1dp"
+        android:divider="@color/colorTextSecond"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="80dp" />
+
+</RelativeLayout>
